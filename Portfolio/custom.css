@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.intro h5{
+    background-color: rgb(0, 0, 0);
+    display: inline;
+    padding:3px;
+    color: rgb(76, 184, 194);
+   
+  
+}
+
+.intro h1{
+    text-shadow: 10px 10px 5px black;
+    transition: 0.9s all ease-in ;
+    cursor:pointer;
+}
+
+
+
+.intro p{
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+@media(min-width:750px){
+    .profile-pic{
+        position: relative;
+        right: -70px;
+    }
+}
+
+@media(min-width:450px){
+    .intro{
+        position: relative;
+        left:-50px;
+    }
+}
+
+@media(max-width: 750px){
+    .profile-pic{
+        max-height: 270px;
+        position: relative;
+        left: -25%;
+        
+    }
+}
+
+@media(max-width: 400px){
+    .intro-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 0;
+        padding:0;
+    }
+}
+
+@media(max-width: 400px){
+    .nav{
+    margin-left: -5px;
+
+    }
+}
+
+
+
+@media(max-width: 750px){
+    .hire-btn, .resume-btn{
+        margin: 10px;
+        font-size: 20px;
+        
+    }
+}
+
+@media (min-width:755px){
+    .hire-btn,.resume-btn{
+        margin:10px;
+    }
+}
+
+.profile-pic{
+    border: 5px solid darkcyan ;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px darkcyan;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.profile-pic:hover{
+ 
+    transform: scale(1.1);
+}
+
+.my-container{
+    background-image: url(background.gif);
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 30px;
+    height: min-content;
+}
+.info-container{
+    height: fit-content;
+  border-radius: 20px;
+    overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.582);
+    padding:30px;
+    color: whitesmoke;
+}
+
+.info-container h1{
+    color:rgb(245, 245, 245);
+    font-weight:500;
+    margin:0px 10px 20px 10px;
+    padding: 8px;
+    text-align: center;
+    text-shadow: 2px 3px 3px rgba(19, 160, 185, 0.918);
+    
+    font-family: 'Merriweather', serif;
+}
+
+.my-container{
+    box-shadow: 0px 10px  5px black;
+}
+
+
+.info-container ul  {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-container ul li{
+    padding: 20px;
+    margin: 16px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px black;
+    background-color:rgba(0, 0, 0, 0.726);
+    cursor: pointer;
+ 
+}
+
+.info-container ul li:hover{
+    transform: scale(1.2);
+}
+
+
+
+.web-dev-img:hover{
+    transform: scale(1.1);
+}
+
+@media(min-width:750px){
+    .web-dev-img{
+        top: 40px;
+    }
+}
+
+@media(max-width:400px){
+    .info-container ul li img{
+        padding: 2px;
+        margin: 2px;
+        height: 70px;
+        box-shadow: none;
+        border: none;
+    }
+}
+@media(max-width:400px) {
+    .info-container ul{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:400px) {
+    .info-container h1{
+        font-size: 28px;
+        display: block;
+    }
+}
